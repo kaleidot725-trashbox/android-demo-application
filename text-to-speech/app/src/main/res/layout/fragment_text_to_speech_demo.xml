@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="kaleidot725.texttospeechdemo.MainActivity.TextToSpeechDemoViewModel"/>
+    </data>
+    
+    <LinearLayout
+        android:id="@+id/SpeechLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/SpeechText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:layout_weight="1"
+            android:text="@{viewModel.text}"/>
+        <Button
+            android:id="@+id/SpeechButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text To Speech"/>
+    </LinearLayout>
+</layout>
